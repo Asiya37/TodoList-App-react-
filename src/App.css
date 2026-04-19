@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #0a0a0a;
+}
+
+/* Center layout */
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.todo-container {
+  width: 400px;
+  padding: 30px;
+  border-radius: 20px;
+  background: #111;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.1);
+}
+
+/* Header */
+.header h1 {
+  color: #00ffff;
+  font-size: 28px;
+}
+
+.header p {
+  color: #888;
+  margin-bottom: 20px;
+}
+
+/* Input */
+.input-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #1a1a1a;
+  color: white;
+}
+
+.input-box input::placeholder {
+  color: #666;
+}
+
+.input-box button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background: #ff00ff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-box button:hover {
+  box-shadow: 0 0 10px #ff00ff;
+}
+
+/* Todo Items */
+.item {
+  background: #1a1a1a;
+  padding: 12px;
+  border-radius: 12px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid transparent;
+  transition: 0.3s;
+}
+
+.item:hover {
+  border: 1px solid #00ffff;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.item span {
+  color: #eee;
+}
+
+.item button {
+  background: transparent;
+  border: none;
+  color: #999;
+  cursor: pointer;
+}
+
+.item button:hover {
+  color: #ff4d4d;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  color: #aaa;
+  font-size: 13px;
+}
+
+/* Selected item */
+.item.selected {
+  border: 1px solid #ff00ff;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.4);
+}
+
+/* Completed */
+.completed {
+  text-decoration: line-through;
+  color: #666;
+}
+
+/* Actions */
+.actions button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #bbb;
+}
+
+.actions button:hover {
+  color: #00ffff;
+}
+
+/* Delete Selected Button */
+.delete-all {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #ff004c;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-all:hover {
+  background: #ff1a5e;
+  box-shadow: 0 0 10px #ff004c;
+}
